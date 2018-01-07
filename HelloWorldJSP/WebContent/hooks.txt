@@ -1,0 +1,3 @@
+curl user sangeetha:585da82e7d3df2991dea3533ea794d06 http://localhost:8080/jenkins/job/triggerbuild/build?token=gitbitsolution6789
+
+echo "jenkins build from an external script"	
