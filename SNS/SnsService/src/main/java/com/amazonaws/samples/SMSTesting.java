@@ -45,7 +45,7 @@ package com.amazonaws.samples;
 	    
 	    public static void main (String args[]){
 	    	
-	    	sendSMS("Book you CAB.","+919941097424");
+	    	//sendSMS("Book you CAB.","+919941097424");
 	    	
 	    }
 	    
