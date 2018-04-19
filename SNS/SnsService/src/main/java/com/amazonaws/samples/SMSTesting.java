@@ -28,8 +28,8 @@ package com.amazonaws.samples;
 	            snsClient = (AmazonSNSClient) AmazonSNSClientBuilder
 	               	 .standard()
 	               	 .withCredentials(new AWSStaticCredentialsProvider(credentials))
-	               	 .withRegion(Regions.US_WEST_2).build();
-	  
+	               	// .withRegion(Regions.US_WEST_2).build();
+	            .withRegion(Regions.US_EAST_2).build();
 	            //boolean sendSms = validatePhoneNumber(phoneNumber);
 	            PublishResult result = snsClient.publish(new PublishRequest()
 	                    						.withMessage(message)
@@ -45,7 +45,7 @@ package com.amazonaws.samples;
 	    
 	    public static void main (String args[]){
 	    	
-	    	sendSMS("Book you CAB.","+919941097424");
+	    	sendSMS("Hi Today is thursday.Please book your cab for next week ","+919941097424");
 	    	System.out.println("sending sms");
 	    	
 	    }
